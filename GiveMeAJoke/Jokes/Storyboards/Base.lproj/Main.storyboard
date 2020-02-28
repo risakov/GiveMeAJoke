@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SWc-TR-BRd">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mi 8 Official Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="iIX-fQ-vLP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.90029174985326488" green="0.83318815647378552" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovc-eL-zlH">
+                                <rect key="frame" x="127" y="418.66666666666669" width="160" height="59"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="51"/>
+                                <state key="normal" title="Let's go!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="quiteOption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9CP-Er-H6B"/>
+                                    <segue destination="VBf-Mf-FEh" kind="presentation" modalTransitionStyle="crossDissolve" id="yEW-J5-I6i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iIX-fQ-vLP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3NG-QT-H3C"/>
+                            <constraint firstAttribute="bottom" secondItem="iIX-fQ-vLP" secondAttribute="bottom" id="HRy-y9-TjC"/>
+                            <constraint firstItem="iIX-fQ-vLP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KRU-TE-onV"/>
+                            <constraint firstItem="Ovc-eL-zlH" firstAttribute="centerX" secondItem="iIX-fQ-vLP" secondAttribute="centerX" id="ddu-i4-pFi"/>
+                            <constraint firstAttribute="trailing" secondItem="iIX-fQ-vLP" secondAttribute="trailing" id="j17-Pf-HzB"/>
+                            <constraint firstItem="Ovc-eL-zlH" firstAttribute="centerY" secondItem="iIX-fQ-vLP" secondAttribute="centerY" id="jUZ-fH-VmC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ttz-Qw-deh">
+                        <barButtonItem key="leftBarButtonItem" id="i7q-tg-dt2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="quiteMeetingButton" destination="Ovc-eL-zlH" id="htP-Cc-W74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.79999999999995" y="115.59220389805098"/>
+        </scene>
+        <!--Jokes Party View Controller-->
+        <scene sceneID="EhB-LX-mmF">
+            <objects>
+                <viewController id="6yQ-tt-KTP" customClass="JokesPartyViewController" customModule="Jokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KNV-lb-OQK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mi 8 Official Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="8gC-N7-5yh">
+                                <rect key="frame" x="0.0" y="-27" width="414" height="869"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Jokes Left." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euv-PM-ET0">
+                                <rect key="frame" x="152" y="421.66666666666669" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zql-RO-QOF" customClass="SwipeableCardViewContainer" customModule="Jokes" customModuleProvider="target">
+                                <rect key="frame" x="5" y="154" width="404" height="444"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="444" id="ugG-ld-oZp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="Hua-bx-o53" firstAttribute="trailing" secondItem="Zql-RO-QOF" secondAttribute="trailing" constant="5" id="1rY-wG-VaX"/>
+                            <constraint firstItem="8gC-N7-5yh" firstAttribute="trailing" secondItem="Hua-bx-o53" secondAttribute="trailing" id="9fQ-VN-PlP"/>
+                            <constraint firstItem="Euv-PM-ET0" firstAttribute="centerY" secondItem="Hua-bx-o53" secondAttribute="centerY" id="E2g-GA-fxg"/>
+                            <constraint firstItem="Zql-RO-QOF" firstAttribute="centerX" secondItem="Hua-bx-o53" secondAttribute="centerX" id="FGP-JU-WXj"/>
+                            <constraint firstItem="Zql-RO-QOF" firstAttribute="centerY" secondItem="Hua-bx-o53" secondAttribute="centerY" constant="-56" id="GXP-cr-WfM"/>
+                            <constraint firstItem="Euv-PM-ET0" firstAttribute="centerX" secondItem="Hua-bx-o53" secondAttribute="centerX" id="Hk9-mf-FCM"/>
+                            <constraint firstItem="8gC-N7-5yh" firstAttribute="top" secondItem="KNV-lb-OQK" secondAttribute="topMargin" constant="-83" id="KXq-bW-9d0"/>
+                            <constraint firstItem="8gC-N7-5yh" firstAttribute="top" secondItem="KNV-lb-OQK" secondAttribute="top" id="LVV-jR-U6h"/>
+                            <constraint firstItem="8gC-N7-5yh" firstAttribute="top" secondItem="KNV-lb-OQK" secondAttribute="top" id="Lka-wv-OJ3"/>
+                            <constraint firstAttribute="bottom" secondItem="8gC-N7-5yh" secondAttribute="bottom" id="Nf6-zb-iXV"/>
+                            <constraint firstItem="8gC-N7-5yh" firstAttribute="leading" secondItem="Hua-bx-o53" secondAttribute="leading" id="WNH-9k-et2"/>
+                            <constraint firstItem="Zql-RO-QOF" firstAttribute="leading" secondItem="Hua-bx-o53" secondAttribute="leading" constant="5" id="knE-kH-YKW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hua-bx-o53"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qgc-6k-wRe">
+                        <barButtonItem key="leftBarButtonItem" image="home" id="a9H-5Q-Jnq">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <segue destination="SWc-TR-BRd" kind="presentation" modalTransitionStyle="crossDissolve" id="ltZ-Pc-GiM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="t0c-tl-hRd">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="shareQuestion:" destination="6yQ-tt-KTP" id="VQP-5g-0SP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="swipeableCardView" destination="Zql-RO-QOF" id="BCC-lQ-ha3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycO-iB-oXx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.79999999999995" y="-763.26836581709154"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uY4-FX-Tw6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VBf-Mf-FEh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="home-tab" id="QwD-51-abT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L1A-e7-AAc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6yQ-tt-KTP" kind="relationship" relationship="rootViewController" id="WXp-pv-bxL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GdU-eT-bwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="1032"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8LG-9m-RMN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SWc-TR-BRd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="am4-Pz-isS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pXP-zW-OXU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tat-FS-ND2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.4" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mi 8 Official Wallpaper" width="1080" height="2248"/>
+        <image name="home" width="30" height="30"/>
+        <image name="home-tab" width="22" height="21"/>
+    </resources>
+</document>
